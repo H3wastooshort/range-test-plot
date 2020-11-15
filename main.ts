@@ -2,7 +2,7 @@ radio.onReceivedNumber(function (receivedNumber) {
     if (!(transmit)) {
         led.plotBarGraph(
         radio.receivedPacket(RadioPacketProperty.SignalStrength) + 100,
-        40
+        50
         )
         music.playTone(988, music.beat(BeatFraction.Sixteenth))
     }
