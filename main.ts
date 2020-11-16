@@ -4,7 +4,7 @@ radio.onReceivedNumber(function (receivedNumber) {
         radio.receivedPacket(RadioPacketProperty.SignalStrength) + 100,
         50
         )
-        music.playTone(988, music.beat(BeatFraction.Sixteenth))
+        music.playTone((radio.receivedPacket(RadioPacketProperty.SignalStrength) + 100) * 5, music.beat(BeatFraction.Sixteenth))
     }
 })
 input.onButtonPressed(Button.A, function () {
